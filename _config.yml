@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Dr. Khushboo Khullar"
   avatar           : "/assets/images/kk_avtaar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : Class Bitcoin 2017 *Venture Partner*, *Angel Investor*, *Co-Founder*, *GTM Advisor*."
+  bio              : "Class Bitcoin 2017 *Venture Partner*, *Angel Investor*, *Co-Founder*, *GTM Advisor*."
   location         : "Singapore"
   email            :
   links:

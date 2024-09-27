@@ -2,22 +2,22 @@
   "name": "minimal-mistakes",
   "private": true,
   "version": "4.26.2",
-  "description": "Minimal Mistakes 2 column Jekyll theme.",
+  "description": "My Personal Website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mmistakes/minimal-mistakes.git"
+    "url": "https://github.com/khushbookhullar/khushbookhullar.github.io.git"
   },
   "keywords": [
     "jekyll",
     "theme",
     "minimal"
   ],
-  "author": "Michael Rose",
+  "author": "Dr. Khushboo Khullar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+    "url": "https://github.com/khushbookhullar/khushbookhullar.github.io/issues"
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "homepage": "https://khushbookhullar.github.io/khush/",
   "engines": {
     "node": ">= 0.10.0"
   },
