@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors                 = ["Michael Rose", "iBug"]
 
   spec.summary                 = %q{A flexible two-column Jekyll theme.}
-  spec.homepage                = "https://github.com/mmistakes/minimal-mistakes"
+  spec.homepage                = "https://khushbookhullar.github.io/blog"
   spec.license                 = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
