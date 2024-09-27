@@ -98,7 +98,7 @@ analytics:
 
 # Site Author
 author:
-  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+  name             : Dr. Khushboo Khullar # *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/kk_avtaar.jpg"
   bio              : "Class Bitcoin 2017 *Venture Partner*, *Angel Investor*, *Co-Founder*, *GTM Advisor*."
   location         : "Singapore"
