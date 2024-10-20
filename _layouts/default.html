@@ -8,8 +8,13 @@
 </head>
 <body>
 
-  <!-- Top Menu -->
-  <header>
+  <!-- Side Menu -->
+  <aside class="side-menu">
+    <div class="profile">
+      <img src="/assets/img/profile.jpg" alt="Profile Picture">
+      <h1>[Your Name]</h1>
+      <p>[Your Profession]</p>
+    </div>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -17,12 +22,20 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </aside>
 
   <!-- Main Content -->
-  <main>
+  <main class="main-content">
     {{ content }}
   </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  </footer>
+
+</body>
+</html>
+
 
   <!-- Footer -->
   <footer>
