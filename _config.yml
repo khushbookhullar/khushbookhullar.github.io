@@ -1,5 +1,5 @@
 title: "My Minimalist Website"
 description: "A simple and minimalist personal website."
 baseurl: "" # If hosted at root, otherwise add "/repo-name"
-url: "https://username.github.io" # Your GitHub Pages URL
+url: "https://khushbookhullar.github.io" # Your GitHub Pages URL
 theme: minima # Using Jekyll's default minimal theme
