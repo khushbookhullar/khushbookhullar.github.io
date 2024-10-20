@@ -1,97 +1,87 @@
-/* General Styles */
+/* General Body Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    background-color: white;
     margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+  }
+  
+  /* Flexbox Container for Layout */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Side Menu (Fixed on the Right) */
+  .side-menu {
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .profile {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-name {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .profile-profession {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .nav-links {
+    list-style: none;
     padding: 0;
   }
   
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+  .nav-links li {
+    margin: 1.5rem 0;
   }
   
-  .section {
-    padding: 3rem 1.5rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  a {
+  .nav-links li a {
+    font-size: 1.2rem;
     color: #007bff;
     text-decoration: none;
   }
   
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Button Styling */
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 1rem;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Top Menu */
-  header {
-    background-color: white;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
-    color: #007bff;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
+  .nav-links li a:hover {
     color: #0056b3;
   }
   
-  /* Blog Posts Section */
+  /* Main Content (Centered) */
+  .main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    margin-right: 320px; /* Add margin to avoid overlap with side menu */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
   .blog-posts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-  }
-  
-  .post-preview {
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    border-radius: 5px;
-    background-color: #fafafa;
-    transition: transform 0.2s;
-  }
-  
-  .post-preview:hover {
-    transform: scale(1.03);
   }
   
   .post-preview h3 {
@@ -100,41 +90,31 @@ body {
   }
   
   .post-preview time {
-    display: block;
-    margin-top: 0.5rem;
     font-size: 0.9rem;
     color: #666;
   }
   
-  /* Footer */
-  footer {
-    background-color: #f8f9fa;
-    padding: 2rem 1.5rem;
+  .footer {
     text-align: center;
+    padding: 2rem;
+    background-color: #f1f1f1;
   }
   
-  .footer-content ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer-content ul li {
-    display: inline;
-    margin: 0 1rem;
-  }
-  
-  /* Responsive Design */
+  /* Mobile Responsive Adjustments */
   @media (max-width: 768px) {
+    .side-menu {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .main-content {
+      margin-right: 0;
+      padding: 1rem;
+    }
+  
     .blog-posts {
       grid-template-columns: 1fr;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav ul li {
-      margin-bottom: 1rem;
     }
   }

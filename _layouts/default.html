@@ -8,45 +8,33 @@
 </head>
 <body>
 
-  <!-- Side Menu -->
-  <aside class="side-menu">
-    <div class="profile">
-      <img src="/assets/img/profile.jpg" alt="Profile Picture">
-      <h1>[Your Name]</h1>
-      <p>[Your Profession]</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </aside>
+  <!-- Main Container with Flexbox Layout -->
+  <div class="container">
+    
+    <!-- Side Menu (Right-Aligned) -->
+    <aside class="side-menu">
+      <div class="profile">
+        <img src="/assets/img/profile.png" alt="Dr. Khushbo Khullar" class="profile-img">
+        <h1 class="profile-name">[Your Name]</h1>
+        <p class="profile-profession">[Your Profession]</p>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-  <!-- Main Content -->
-  <main class="main-content">
-    {{ content }}
-  </main>
+    <!-- Main Content (Left-Aligned) -->
+    <main class="main-content">
+      {{ content }}
+    </main>
+  </div>
 
   <footer>
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-  </footer>
-
-</body>
-</html>
-
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-      <ul>
-        <li><a href="mailto:khushbookhullar@gmail.com">Email</a></li>
-        <li><a href="https://github.com/khushbookhullar">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/dr-khushboo-khullar-38251b43/">LinkedIn</a></li>
-      </ul>
-    </div>
   </footer>
 
 </body>
